@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar-se</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="register-container">
@@ -22,6 +24,39 @@
         </div>
 
         <div class="campo">
+            <label for="generoSelect">Gênero</label>
+            <select id="generoSelect">
+                <option value="">Selecione</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Não Binário">Não Binário</option>
+            </select>
+        </div>
+
+        <div class="campo-radio">
+            <label>Gênero</label>
+
+            <div class="radio-grupo">
+
+                <label class="radio-item">
+                    <input type="radio" name="genero" value="Feminino">
+                    <span>Feminino</span>
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="genero" value="Masculino">
+                    <span>Masculino</span>
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="genero" value="Não Binário">
+                    <span>Não Binário</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="campo">
             <label for="senha">senha</label>
             <input type="password" id="senha" placeholder="Digite sua senha">
         </div>
@@ -31,12 +66,13 @@
             <input type="password" id="senha" placeholder="confirme sua senha">
         </div>
 
-        <button id="btnCadastrar">Cadastrar</button>
+        <button id="btnCadastrar" onclick="navRegistrar()">Cadastrar</button>
         <p id="mensagem" class="mensagem"></p>
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="script.js"></script>
     </div>
-    
+
 </body>
+
 </html>

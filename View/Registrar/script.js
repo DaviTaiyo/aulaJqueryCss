@@ -70,3 +70,7 @@ $(document).ready(function () {
     }
   
   });
+
+  function navRegistrar() {
+    window.location.href = "../home/homepage.html";
+}

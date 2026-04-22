@@ -86,3 +86,43 @@ button:hover {
 .sucesso {
     color: #2b9348;
 }
+
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: true;
+    transition: 0.3s;
+    background-color: white;
+    color: #1f6f8b;
+  }
+  
+  select:focus {
+    border-color: #1f6f8b;
+    box-shadow: 0 0 12px rgba(31, 111, 139, 0.4);
+  }
+  
+  .radio-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .radio-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .radio-item input {
+    transform: scale(1.2); /* deixa o radio maior */
+  }
+  
+  .radio-item span {
+    font-size: 14px;
+  }
+
+  
