@@ -13,69 +13,107 @@
     <aside class="sidebar">
       <h2>Painel</h2>
       <ul>
-        <li class="ativo">Home</li>
-        <li>Perfil</li>
-        <li>Mensagens</li>
+        <li class="ativo" data-pagina="home">Home</li>
+        <li data-pagina="perfil">Perfil</li>
+        <li data-pagina="mensagens">Mensagens</li>
         <li>Configurações</li>
         <li>Sair</li>
       </ul>
     </aside>
 
     <main class="conteudo">
+      
+      <section id="homeSection" class="conteudo-pagina">
 
-      <header class="topo">
-        <div>
-          <h1>Bem-vindo, Davi</h1>
-          <p>Resumo da sua conta</p>
-        </div>
-        <div class="mini-perfil">
-          <img src="https://i.pinimg.com/736x/d7/99/04/d79904e7eed281446dfd39d21d5828be.jpg" alt="Foto do usuário">
-          <span>Davi</span>
-        </div>
-      </header>
+        <header class="topo">
+          <div>
+            <h1>Bem-vindo, Davi</h1>
+            <p>Resumo da sua conta</p>
+          </div>
+          <div class="mini-perfil">
+            <img src="https://i.pinimg.com/736x/d7/99/04/d79904e7eed281446dfd39d21d5828be.jpg" alt="Foto do usuário">
+            <span>Davi</span>
+          </div>
+        </header>
 
-      <section class="cards">
-        <div class="card">
-          <h3>Projetos</h3>
-          <p>8 ativos</p>
-        </div>
+        <section class="cards">
+          <div class="card">
+            <h3>Projetos</h3>
+            <p>8 ativos</p>
+          </div>
 
-        <div class="card">
-          <h3>Mensagens</h3>
-          <p>12 novas</p>
-        </div>
+          <div class="card">
+            <h3>Mensagens</h3>
+            <p>12 novas</p>
+          </div>
 
-        <div class="card">
-          <h3>Tarefas</h3>
-          <p>5 pendentes</p>
-        </div>
+          <div class="card">
+            <h3>Tarefas</h3>
+            <p>5 pendentes</p>
+          </div>
+        </section>
+
       </section>
 
-      <section class="area-inferior">
-        <div class="perfil-usuario">
-          <h2>Perfil do Usuário</h2>
+      <section id="perfilSection" class="conteudo-pagina">
 
+        <header class="topo">
+          <div>
+            <h1>Perfil do Usuário</h1>
+            <p>Informações completas da conta</p>
+          </div>
+        </header>
+
+        <div class="perfil-usuario-pagina">
           <div class="perfil-box">
-            <img src="https://via.placeholder.com/120" alt="Foto do usuário">
+            <img src="https://i.pinimg.com/736x/d7/99/04/d79904e7eed281446dfd39d21d5828be.jpg" alt="Foto do usuário">
 
             <div class="info-perfil">
               <p><strong>Nome:</strong> Davi</p>
               <p><strong>E-mail:</strong> davi@email.com</p>
               <p><strong>Curso:</strong> Tecnologia da Informação</p>
               <p><strong>Status:</strong> Ativo</p>
+              <p><strong>Cidade:</strong> Campinas</p>
+              <p><strong>Função:</strong> Usuário do sistema</p>
             </div>
           </div>
         </div>
 
-        <div class="atividade-recente">
-          <h2>Atividades Recentes</h2>
-          <ul>
-            <li>Você acessou o sistema hoje</li>
-            <li>Nova mensagem recebida</li>
-            <li>Seu perfil foi atualizado</li>
-            <li>Uma nova tarefa foi adicionada</li>
-          </ul>
+      </section>
+
+      <section id="mensagensSection" class="conteudo-pagina">
+
+        <header class="topo">
+          <div>
+            <h1>Mensagens</h1>
+            <p>Veja suas mensagens recebidas</p>
+          </div>
+        </header>
+      
+        <div class="mensagens-box">
+          <h2>Caixa de Entrada</h2>
+      
+          <div class="mensagem-item">
+            <h3>Suporte do Sistema</h3>
+            <p>Seu cadastro foi atualizado com sucesso.</p>
+          </div>
+      
+          <div class="mensagem-item">
+            <h3>Administrador</h3>
+            <p>Uma nova tarefa foi adicionada ao seu painel.</p>
+          </div>
+      
+          <div class="mensagem-item">
+            <h3>Equipe</h3>
+            <p>Reunião marcada para amanhã às 09:00.</p>
+          </div>
+      
+          <div class="mensagem-item">
+            <h3>Financeiro</h3>
+            <p>Seu relatório mensal já está disponível.</p>
+          </div>
         </div>
+      
       </section>
 
     </main>

@@ -1,168 +1,240 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  body {
-    background-color: #f4f6f9;
-  }
-  
-  .dashboard {
-    display: flex;
-    min-height: 100vh;
-  }
-  
-  /* Sidebar */
-  .sidebar {
-    width: 250px;
-    background-color: #14213d;
-    color: white;
-    padding: 25px 20px;
-  }
-  
-  .sidebar h2 {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-  }
-  
-  .sidebar ul li {
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .sidebar ul li:hover,
-  .sidebar ul li.ativo {
-    background-color: #1f6f8b;
-  }
-  
-  /* Conteúdo */
-  .conteudo {
-    flex: 1;
-    padding: 30px;
-  }
-  
-  /* Topo */
-  .topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  .topo h1 {
-    font-size: 28px;
-    color: #14213d;
-  }
-  
-  .topo p {
-    color: #666;
-    margin-top: 5px;
-  }
-  
-  .mini-perfil {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .mini-perfil img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .mini-perfil span {
-    font-weight: bold;
-    color: #14213d;
-  }
-  
-  /* Cards */
-  .cards {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-  }
-  
-  .card {
-    flex: 1;
-    background-color: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: 0.3s;
-    display: none;
-  }
-  
-  .card h3 {
-    margin-bottom: 10px;
-    color: #1f6f8b;
-  }
-  
-  .card p {
-    font-size: 22px;
-    font-weight: bold;
-    color: #14213d;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Parte de baixo */
-  .area-inferior {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .perfil-usuario,
-  .atividade-recente {
-    flex: 1;
-    background-color: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    display: none;
-  }
-  
-  .perfil-usuario h2,
-  .atividade-recente h2 {
-    margin-bottom: 20px;
-    color: #14213d;
-  }
-  
-  .perfil-box {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .perfil-box img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-  }
-  
-  .info-perfil p {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .atividade-recente ul {
-    list-style: none;
-  }
-  
-  .atividade-recente ul li {
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: #f4f6f9;
-    border-radius: 8px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #14213d;
+  color: white;
+  padding: 25px 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.ativo {
+  background-color: #1f6f8b;
+}
+
+/* Conteúdo */
+.conteudo {
+  flex: 1;
+  padding: 30px;
+}
+
+/* páginas */
+.conteudo-pagina {
+  display: none;
+}
+
+/* deixa a home visível ao carregar */
+#homeSection {
+  display: block;
+}
+
+/* Topo */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topo h1 {
+  font-size: 28px;
+  color: #14213d;
+}
+
+.topo p {
+  color: #666;
+  margin-top: 5px;
+}
+
+.mini-perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mini-perfil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mini-perfil span {
+  font-weight: bold;
+  color: #14213d;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  display: none;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #1f6f8b;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #14213d;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Parte de baixo */
+.area-inferior {
+  display: flex;
+  gap: 20px;
+}
+
+.perfil-usuario-home,
+.atividade-recente,
+.perfil-usuario-pagina {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
+}
+
+.perfil-usuario-home,
+.atividade-recente {
+  display: none;
+}
+
+.perfil-usuario-home h2,
+.atividade-recente h2,
+.perfil-usuario-pagina h2 {
+  margin-bottom: 20px;
+  color: #14213d;
+}
+
+.perfil-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.perfil-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info-perfil p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.atividade-recente ul {
+  list-style: none;
+}
+
+.atividade-recente ul li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f4f6f9;
+  border-radius: 8px;
+}
+
+/* página perfil */
+.perfil-usuario-pagina {
+  max-width: 800px;
+}
+
+.perfil-usuario-pagina .perfil-box {
+  align-items: flex-start;
+}
+
+.perfil-usuario-pagina img {
+  width: 150px;
+  height: 150px;
+}
+
+.mensagens-box {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.mensagens-box h2 {
+  margin-bottom: 20px;
+  color: #14213d;
+}
+
+.mensagem-item {
+  padding: 18px;
+  margin-bottom: 15px;
+  background-color: #f4f6f9;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: none;
+}
+
+.mensagem-item h3 {
+  margin-bottom: 8px;
+  color: #1f6f8b;
+}
+
+.mensagem-item p {
+  color: #333;
+}
+
+.mensagem-item:hover {
+  background-color: #dfeaf1;
+}
+
+.mensagem-item.ativa {
+  border-left: 6px solid #1f6f8b;
+  background-color: #e8f1f5;
+}
