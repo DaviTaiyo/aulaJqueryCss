@@ -27,33 +27,10 @@
             <label for="generoSelect">Gênero</label>
             <select id="generoSelect">
                 <option value="">Selecione</option>
-                <option value="Feminino">Feminino</option>
-                <option value="Masculino">Masculino</option>
-                <option value="Não Binário">Não Binário</option>
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+                <option value="Outros">Não Binário</option>
             </select>
-        </div>
-
-        <div class="campo-radio">
-            <label>Gênero</label>
-
-            <div class="radio-grupo">
-
-                <label class="radio-item">
-                    <input type="radio" name="genero" value="Feminino">
-                    <span>Feminino</span>
-                </label>
-
-                <label class="radio-item">
-                    <input type="radio" name="genero" value="Masculino">
-                    <span>Masculino</span>
-                </label>
-
-                <label class="radio-item">
-                    <input type="radio" name="genero" value="Não Binário">
-                    <span>Não Binário</span>
-                </label>
-
-            </div>
         </div>
 
         <div class="campo">
@@ -63,10 +40,10 @@
 
         <div class="campo">
             <label for="senha">Confirmar Senha</label>
-            <input type="password" id="senha" placeholder="confirme sua senha">
+            <input type="password" id="confirmarSenha" placeholder="confirme sua senha">
         </div>
 
-        <button id="btnCadastrar" onclick="navRegistrar()">Cadastrar</button>
+        <button id="btnCadastrar">Cadastrar</button>
         <p id="mensagem" class="mensagem"></p>
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
